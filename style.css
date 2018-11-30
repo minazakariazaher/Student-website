@@ -1,0 +1,25 @@
+.signup{
+
+    width:535px;
+    height: 250px;
+    margin: auto;
+   
+    
+}
+#submit
+{
+    margin:6px 50px;
+}
+
+table td {
+     color: black;
+}
+
+table{
+    margin-left: 535px;
+    margin-top: 200px;
+}
+
+.files{
+    color: black;
+}

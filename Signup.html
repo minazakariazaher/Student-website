@@ -1,0 +1,57 @@
+<html>
+    <head>
+         <link rel="stylesheet" type ="text/css" href ="style.css"/>
+        <title>
+            SignUp
+        </title>
+        <script>
+    function validate()
+   {  
+     var a = document.forms['f1']['password'].value; 
+  	if(a == "") { 
+       alert("Error: password cannot be blank!");
+       return false;
+     }	
+ 	Check = /[0-9]/;  
+     if(!Check.test(a)) {  
+      alert("Error: password must contain at least one number (0-9)!");
+	  return false; 
+
+	
+	}
+	}
+</script>
+    </head>
+    <body <body background="s.jpg" style="
+					background-repeat: no-repeat;
+					background-size: 100%;
+					margin-left: 250px;
+					margin-top: 170;
+	">
+      
+      
+        <form class="signup"id ="f1"action="signup.php" method="GET" onsubmit="return validate(this)">
+            <input type="text" placeholder="First Name" name="firstname" id="FN" required><br><br>
+            <input type="text" placeholder="Last Name" name="lastname" id="LN" required><br><br>
+            <input type="email" placeholder="email" name="email" id="email" required><br><br>
+            <input type="password" placeholder="Password" id="password" name="pass" required><br><br>
+			<select name="grade" style="width: 160;" required>
+					<option disabled="disabled" selected="">Grade</option>
+				<option value="0">1</option>
+				<option value="1">2</option>
+				<option value="2">3</option>
+				<option value="3">4</option>
+			</select>
+			<br>
+			<!--<input type="password"  placeholder="Confirm Password" id="pass2" ><br><br>-->
+            <input type="submit" value="submit" style="
+														margin-left: 50px;
+														margin-top: 11px;
+			"><br>    
+        </form>
+    
+
+     </body>
+     
+</html>
+     
